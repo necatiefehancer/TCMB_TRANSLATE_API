@@ -11,6 +11,6 @@ func main() {
 		log.Fatal(err.Error())
 	} else {
 		goTarihDate := structs.TranslateXMLtoGoStruct(xmlTarih_Date)
-		structs.GetTranslateJSON("tcmb", &goTarihDate)
+		structs.GetTranslateJSON("tcmbApi", &goTarihDate)
 	}
 }
